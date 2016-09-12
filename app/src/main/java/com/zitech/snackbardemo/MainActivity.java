@@ -9,11 +9,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.widget.TextView;
 
 /**
  * Android Support Design 库 之 Snackbar使用及源码分析 - OPEN 开发经验库
  * http://www.open-open.com/lib/view/open1437460246974.html
+ *
+ * Snackbar使用详解及其相关框架TSnackbar - lzy_tinyjoy - 博客频道 - CSDN.NET
+ * http://blog.csdn.net/u012810020/article/details/52108818
  *
  * Android SnackBar使用方法-android程序员-微头条(wtoutiao.com)
  * http://www.wtoutiao.com/p/h6dlCN.html
@@ -48,6 +50,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_5:
                 startActivity(new Intent(MainActivity.this,ColoredSnackBarAct.class));
+                break;
+            case R.id.btn_6:
+                startActivity(new Intent(MainActivity.this,DemoSnackBarAct.class));
                 break;
             case R.id.btn_2:
                 Snackbar.make(mainLayout, "NormalSnackbar", Snackbar.LENGTH_SHORT).show();

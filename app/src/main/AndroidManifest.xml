@@ -17,6 +17,7 @@
         </activity>
         <activity android:name=".TopSnackBarAct"/>
         <activity android:name=".ColoredSnackBarAct"/>
+        <activity android:name=".DemoSnackBarAct"/>
     </application>
 
 </manifest>

@@ -15,10 +15,16 @@
       android:text="TopSnackBar"
       android:onClick="onClick"/>
   <Button
-      android:id="@+id/btn_5"
+    android:id="@+id/btn_5"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:text="ColoredSnackBar"
+    android:onClick="onClick"/>
+  <Button
+      android:id="@+id/btn_6"
       android:layout_width="match_parent"
       android:layout_height="50dp"
-      android:text="ColoredSnackBar"
+      android:text="DemoSnackBarAct"
       android:onClick="onClick"/>
   <Button
       android:id="@+id/btn_2"
