@@ -19,11 +19,11 @@ import android.widget.LinearLayout;
  *
  * Android SnackBar使用方法-android程序员-微头条(wtoutiao.com)
  * http://www.wtoutiao.com/p/h6dlCN.html
- *1. make()方法的第一个参数的view,不能是有一个ScrollView.
+ * 1. make()方法的第一个参数的view,不能是有一个ScrollView.
  因为SnackBar的实现逻辑是往这个View去addView.而ScrollView我们知道,是只能有一个Child的.否则会Exception.
- 2. 如果大家在想把Toast替换成SnackBar.需要注意的是,Toast和SnackBar的区别是,前者是悬浮在所有布局之上的包括键盘,而SnackBar是在View上直接addView的.
+ * 2. 如果大家在想把Toast替换成SnackBar.需要注意的是,Toast和SnackBar的区别是,前者是悬浮在所有布局之上的包括键盘,而SnackBar是在View上直接addView的.
  所以SnackBar.show()的时候,要注意先把Keyboard.hide()了.不然,键盘就会遮住SnackBar.
-
+ * 3. 如果SnackBar传入的view是CoordinatorLayout，那么Snackbar支持向右滑动删除
  *
  */
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
