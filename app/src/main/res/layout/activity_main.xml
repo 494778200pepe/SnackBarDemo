@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
 
@@ -12,6 +13,30 @@
       android:layout_width="match_parent"
       android:layout_height="50dp"
       android:text="TopSnackBar"
+      android:onClick="onClick"/>
+  <Button
+      android:id="@+id/btn_5"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:text="ColoredSnackBar"
+      android:onClick="onClick"/>
+  <Button
+      android:id="@+id/btn_2"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:text="NormalSnackBar"
+      android:onClick="onClick"/>
+  <Button
+      android:id="@+id/btn_3"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:text="BackgroundColor"
+      android:onClick="onClick"/>
+  <Button
+      android:id="@+id/btn_4"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:text="Action"
       android:onClick="onClick"/>
 
 </LinearLayout>
